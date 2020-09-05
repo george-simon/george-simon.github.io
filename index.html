@@ -3,38 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Activity 1: Basic HTML Bio</title>
+
+   <!-- This line is money! It points your HTML to the CSS file. -->
+   <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <h1>George W. Simon</h1>
-  <h2>People / Process / Photography</h2>
-  <img src="/Images/Profile Pic.jpg" alt="Profile Pic">
-  <h3>BIO</h3>
-  <p>Discovering life's treausres. Lover of people and a follower of Jesus. Currently residing in Beaverton, Oregon working at Nike's WHQ.</p>
-  <p>I am always on the look out for opportunities to generously serve through creativity.</p>
 
-  <ul>Follow or Chat:
-    <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/george-w-simon/">LinkedIn Page</a></li>
-    <li><strong>Github:</strong> <a href="https://github.com/george-simon">G_SIMO</a></li>
-    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/george.w.simon/">@george.w.simon</a></li>
-  </ul>
+  <header>
+    <h1>George W. Simon</h1>
+  </header>
 
-  <table>
-    <tr>
-      <th>STRENGTH PILLARS</th>
-    </tr>
-    <tr>
-      <td>People</td>
-      <td>Process</td>
-      <td>Technology</td>
-    </tr>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="three-p">People / Process / Photography</h2>
+        <img id="pro-image" src="/Images/Profile Pic.jpg" alt="Profile Pic">
+      </section>
+      <h3 id="bio-title">BIO</h3>
+      <p>Discovering life's treausres. Lover of people and a follower of Jesus. Currently residing in Beaverton, Oregon working at Nike's WHQ.</p>
+      <p>I am always on the look out for opportunities to generously serve through creativity.</p>
+    </section>
 
-  </table>
+    <aside id="contact-info">
+      <h2>Follow or Chat</h2>
+      <ul>
+        <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/george-w-simon/">LinkedIn Page</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/george-simon">G_SIMO</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/george.w.simon/">@george.w.simon</a></li>
+      </ul>
+    </aside>
 
-  <!-- Bonus link to recent GitHub -->
-  <a href="https://github.com/cullen-andrews/project-one">BootCamp:Project One</a>
-
+    <table>
+      <tr>
+        <th>STRENGTH PILLARS</th>
+      </tr>
+      <tr>
+        <td>People</td>
+        <td>Process</td>
+        <td>Technology</td>
+      </tr>
+    </table>
+  
+    <!-- Bonus link to recent GitHub -->
+    <a href="https://github.com/cullen-andrews/project-one">BootCamp:Project One</a>
+  </main>
+  
 </body>
-
 
 </html>
